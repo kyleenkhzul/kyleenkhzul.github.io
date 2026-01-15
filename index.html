@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kyle's Portfolio</title>
+    <title>Kyle Enkhzul • Portfolio</title>
     <meta name="description" content="Portfolio site with projects and resume." />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -15,11 +15,13 @@
       <nav class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a class="btn small" href="assets/resume.pdf" download>Resume</a>
+        <a href="#resume">Resume</a>
+        <a class="btn small" href="assets/resume.pdf" download>PDF</a>
       </nav>
     </header>
 
     <main id="top">
+      <!-- HERO -->
       <section class="hero section">
         <div class="hero-left">
           <p class="pill">Available for internships • 2026</p>
@@ -28,23 +30,26 @@
             with a focus on real users.
           </h1>
           <p class="sub">
-            I’m a developer who ships polished full-stack projects. Here are a few
-            things I’ve built.
+            I’m a developer who ships polished full-stack projects.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#projects">View Projects</a>
-            <a class="btn ghost" href="assets/resume.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="assets/resume.pdf" download>
+              Download Resume
+            </a>
           </div>
         </div>
 
         <div class="hero-right">
           <div class="card float">
             <div class="card-top">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
             <div class="card-body">
               <p class="mono">$ whoami</p>
-              <p><strong>Your Name</strong></p>
+              <p><strong>Kyle Enkhzul</strong></p>
               <p class="muted">Full-stack • Java • Node • React</p>
               <div class="stat-row">
                 <div class="stat">
@@ -66,6 +71,7 @@
         </div>
       </section>
 
+      <!-- PROJECTS -->
       <section id="projects" class="section">
         <div class="section-head">
           <h2>Projects</h2>
@@ -76,28 +82,19 @@
           <article class="project reveal">
             <div class="project-top">
               <h3>Active Illini</h3>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
               <span class="tag">React Native</span>
-              <span class="tag">Node</span>
-              <span class="tag">Postgres</span>
             </div>
             <p class="muted">
-              Campus sports & meetup platform: RSVPs, notifications, calendar invites.
+              Full-stack mobile platform for UIUC students to create and join
+              recreational sports activities.
             </p>
-            <div class="project-actions">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
-            </div>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-top">
-              <h3>Chicago Landmarks Pathfinder</h3>
-              <span class="tag">Java</span>
-              <span class="tag">Dijkstra</span>
-            </div>
-            <p class="muted">
-              Shortest path by distance & time across landmark graph with robust input validation.
-            </p>
+            <ul class="project-bullets">
+              <li>Led backend architecture, schema design, and migrations</li>
+              <li>Implemented Firebase auth with persistent sessions</li>
+              <li>Enforced CI/CD with ESLint & Prettier</li>
+            </ul>
             <div class="project-actions">
               <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
               <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
@@ -106,51 +103,99 @@
 
           <article class="project reveal">
             <div class="project-top">
-              <h3>Spotify Quiz App</h3>
-              <span class="tag">Android</span>
-              <span class="tag">API</span>
+              <h3>Chicago Landmark Route Finder</h3>
+              <span class="tag">Java</span>
+              <span class="tag">Dijkstra</span>
+              <span class="tag">Graphs</span>
             </div>
             <p class="muted">
-              Quiz experience powered by Spotify data with clean UI and fast interactions.
+              Route-finding system computing shortest paths between major Chicago
+              landmarks.
             </p>
+            <ul class="project-bullets">
+              <li>Implemented Dijkstra’s Algorithm with priority queues</li>
+              <li>Optimized for distance and time-based routing</li>
+              <li>Robust input validation and modular design</li>
+            </ul>
             <div class="project-actions">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Video</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-top">
+              <h3>Minecraft Hypixel Stat Tracker</h3>
+              <span class="tag">React Native</span>
+              <span class="tag">APIs</span>
+            </div>
+            <p class="muted">
+              Mobile app displaying real-time player statistics using Minecraft
+              and Hypixel APIs.
+            </p>
+            <ul class="project-bullets">
+              <li>Integrated external APIs for live stat retrieval</li>
+              <li>Built dynamic charts and visualizations</li>
+            </ul>
+            <div class="project-actions">
               <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about" class="section">
         <div class="section-head">
           <h2>About</h2>
           <p class="muted">
-            Write 2–4 lines about what you’re into, what you’re seeking, and what you build.
+            What I build, what I care about, and what I’m looking for.
           </p>
         </div>
 
         <div class="about reveal">
           <p>
-            I like building clean, reliable software with thoughtful UX. Recently I’ve been
-            working on full-stack apps and data-driven features, with a focus on testing and
-            performance.
+            I enjoy building clean, reliable software with thoughtful UX.
+            Recently, I’ve focused on full-stack applications, backend systems,
+            and performance-conscious design.
+          </p>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p class="muted">One-page PDF, recruiter-ready</p>
+        </div>
+
+        <div class="about reveal">
+          <p>
+            Computer Science student at UIUC with experience in backend systems,
+            databases, and full-stack development.
           </p>
 
           <div class="resume-box">
             <div>
-              <h3>Resume</h3>
-              <p class="muted">Download the PDF directly.</p>
+              <strong>ENKHBILGUUN (Kyle) Enkhzul</strong>
+              <p class="muted">B.S. Computer Science • GPA 3.85 • UIUC</p>
             </div>
-            <a class="btn" href="assets/resume.pdf" download>Download</a>
+            <a class="btn" href="assets/resume.pdf" download>
+              Download PDF
+            </a>
           </div>
         </div>
       </section>
 
+      <!-- FOOTER -->
       <footer class="footer">
         <p class="muted">
           © <span id="year"></span> Kyle Enkhzul •
-          <a class="link" href="https://github.com/kyleenkhzul" target="_blank" rel="noreferrer">GitHub</a> •
-          <a class="link" href="https://www.linkedin.com/in/kyleenkhzul" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link" href="https://github.com/kyleenkhzul" target="_blank" rel="noreferrer">
+            GitHub
+          </a> •
+          <a class="link" href="https://www.linkedin.com/in/kyleenkhzul" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
         </p>
       </footer>
     </main>

@@ -270,3 +270,12 @@ h1{
   .grid{grid-template-columns: 1fr}
   .section-head{align-items:flex-start; flex-direction:column}
 }
+.project-bullets{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.project-bullets li{
+  margin-bottom: 6px;
+}
