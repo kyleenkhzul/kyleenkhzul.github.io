@@ -28,13 +28,20 @@ a{color:inherit; text-decoration:none}
 .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
 
 .bg-glow{
-  position:fixed; inset:-200px;
-  background: conic-gradient(from 180deg, rgba(154,230,255,.10), rgba(195,166,255,.10), rgba(154,230,255,.10));
-  filter: blur(80px);
-  opacity:.6;
+  position:fixed;
+  inset:-300px;
+  background: conic-gradient(
+    from 180deg,
+    rgba(154,230,255,.05),
+    rgba(195,166,255,.04),
+    rgba(154,230,255,.05)
+  );
+  filter: blur(140px);
+  opacity:.35;
   z-index:-1;
-  animation: slowspin 14s linear infinite;
+  animation: slowspin 24s linear infinite;
 }
+
 
 @keyframes slowspin{to{transform:rotate(360deg)}}
 
@@ -269,13 +276,4 @@ h1{
   .hero{grid-template-columns: 1fr; padding-top:34px}
   .grid{grid-template-columns: 1fr}
   .section-head{align-items:flex-start; flex-direction:column}
-}
-.project-bullets{
-  margin: 10px 0 0;
-  padding-left: 18px;
-  color: var(--muted);
-  font-size: 14px;
-}
-.project-bullets li{
-  margin-bottom: 6px;
 }
